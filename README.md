@@ -1,5 +1,9 @@
 # references
 ### 참고용 코드
 
-[For문](https://github.com/slotus0130/references/blob/main/forloop.py)
+[입력](https://github.com/slotus0130/references/blob/main/input.py)
+
 [if문](https://github.com/slotus0130/references/blob/main/if.py)
+
+[For문](https://github.com/slotus0130/references/blob/main/forloop.py)
+
