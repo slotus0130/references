@@ -39,6 +39,8 @@ if not re.search(r'[!@#$%^&*()\-=_+|;:\'"/?,.<>~\[\]{}]', password):
 
 print("valid")
 
+
+
 ### 정규식만을 사용한 버전
 import re
 
