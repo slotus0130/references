@@ -74,3 +74,46 @@ for line in lines:
 # first value: 1, second value: 10
 # first value: 3, second value: 40
 ```
+
+## Case 3: 첫째 줄의 값은 다음 라인들에 올 재료의 가지 수, 두 번째 줄은 창고에 있는 각 재료의 수, 세 번째 줄은 요리에 필요한 각 재료의 수
+
+```
+3
+6 3 5
+1 1 2
+```
+
+#### VS Code 테스트
+
+```python
+input_data = """3
+6 3 5
+1 1 2"""
+
+# 입력을 줄 단위로 나누기
+lines = input_data.split('\n')
+
+# 재료의 가짓수
+n = int(lines[0])
+
+# 창고에 있는 재료의 수량
+stock = list(map(int, lines[1].split()))
+
+# 스테이크를 만드는데 필요한 재료의 수량
+recipe = list(map(int, lines[2].split()))
+
+# 결과는,
+# n: 3, stock: [6, 3, 5], recipe: [1, 1, 2]
+```
+
+#### 대회 업로드
+```python
+n = int(input())
+stock = list(map(int, input().split()))
+recipe = list(map(int, input().split()))
+
+print(f"n: {n}, stock: {stock}, recipe: {recipe}")
+
+# 결과는,
+# n: 3, stock: [6, 3, 5], recipe: [1, 1, 2]
+```
