@@ -117,3 +117,60 @@ print(f"n: {n}, stock: {stock}, recipe: {recipe}")
 # 결과는,
 # n: 3, stock: [6, 3, 5], recipe: [1, 1, 2]
 ```
+
+## Case 4: 첫째 줄의 값은 다음 라인들에 올 모든 직업의 수(문자열), 직업 이름들 아래의 값은 다음 라인들에 올 내 직업의 수(문자열)
+```
+2
+Hero
+Paladin
+1
+Hero
+```
+
+#### VS Code 테스트
+
+```python
+N = 2
+
+input_data = """Hero
+Paladin"""
+
+# 입력을 줄 단위로 나누기
+all_jobs = input_data.split('\n')
+print(all_jobs)
+
+# 결과는,
+# ['Hero', 'Paladin']
+
+K = 1
+
+input_data = """Paladin"""
+
+# 입력을 줄 단위로 나누기
+my_jobs = input_data.split('\n')
+print(my_jobs)
+
+# 결과는,
+# ['Hero']
+```
+
+#### 대회 업로드
+```python
+N = int(input())
+
+# 입력을 줄 단위로 나누기
+all_jobs = [input() for _ in range(N)]
+print(all_jobs)
+
+# 결과는,
+# ['Hero', 'Paladin']
+
+K = int(input())
+
+# 입력을 줄 단위로 나누기
+my_jobs = [input() for _ in range(K)]
+print(my_jobs)
+
+# 결과는,
+# ['Hero']
+```
