@@ -48,7 +48,7 @@ input_data = """2 20
 3 40"""
 
 # input_data를 list로 변환
-lines = [tuple(map(int, line.split())) for line in input_data.split('\n')]
+lines = [list(map(int, line.split())) for line in input_data.split('\n')]
 
 for line in lines:
     print(f"first value: {line[0]}, second value: {line[1]}")
@@ -63,7 +63,7 @@ for line in lines:
 #### 업로드
 ```python
 init_value, number_of_lines = map(int, input().split())
-lines = [tuple(map(int, input().split())) for _ in range(number_of_lines)]
+lines = [list(map(int, input().split())) for _ in range(number_of_lines)]
 
 for line in lines:
     print(f"first value: {line[0]}, second value: {line[1]}")
