@@ -63,7 +63,6 @@ for line in lines:
 #### 업로드
 ```python
 init_value, number_of_lines = map(int, input().split())
-
 lines = [tuple(map(int, input().split())) for _ in range(number_of_lines)]
 
 for line in lines:
@@ -204,4 +203,26 @@ N = int(input())
 for _ in range(N):
     line = list(input().split())
     print(f"line[0]: {line[0]}, line[1]: {line[1]}")
+```
+
+## Case 6: 첫째 줄에 전체 입력 수, 둘째 줄에 숫자가 띄어쓰기로 구분되어 주어짐
+
+#### VS Code 테스트
+
+```python
+N = 5
+input_numbers = "4 3 1 2 5"
+
+for n in map(int, input_numbers.split()):
+    print(n)
+```
+
+#### 업로드
+
+```python
+N = int(input())
+
+for i in range(N):
+    for c in input().split():
+        print(c)
 ```
