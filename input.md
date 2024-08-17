@@ -16,7 +16,7 @@ print(numbers)
 # 결과는 [4, 3, 1, 2, 5]
 ```
 
-#### 대회 업로드
+#### 업로드
 ```python
 N = int(input())
 input_numbers = input()
@@ -60,7 +60,7 @@ for line in lines:
 ```
 
 
-#### 대회 업로드
+#### 업로드
 ```python
 init_value, number_of_lines = map(int, input().split())
 
@@ -106,7 +106,7 @@ recipe = list(map(int, lines[2].split()))
 # n: 3, stock: [6, 3, 5], recipe: [1, 1, 2]
 ```
 
-#### 대회 업로드
+#### 업로드
 ```python
 n = int(input())
 stock = list(map(int, input().split()))
@@ -154,7 +154,7 @@ print(my_jobs)
 # ['Hero']
 ```
 
-#### 대회 업로드
+#### 업로드
 ```python
 N = int(input())
 
@@ -173,4 +173,35 @@ print(my_jobs)
 
 # 결과는,
 # ['Hero']
+```
+
+## Case 5: 첫째 줄의 값은 다음 라인들에 올 모든 문자열의 수(문자열), 다음 라인들은 띄어쓰기로 구분되는 문자열
+
+```
+2
+WC2B 5RL
+SW20 8RR
+```
+
+#### VS Code 테스트
+
+```python
+N = 2
+
+input_data = """WC2B 5RL
+SW20 8RR"""
+
+for _line in input_data.split('\n'):
+    line = _line.split()
+    print(f"line[0]: {line[0]}, line[1]: {line[1]}")
+```
+
+#### 업로드
+
+```python
+N = int(input())
+
+for _ in range(N):
+    line = list(input().split())
+    print(f"line[0]: {line[0]}, line[1]: {line[1]}")
 ```
